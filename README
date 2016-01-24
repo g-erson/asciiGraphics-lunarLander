@@ -1,0 +1,5 @@
+This project enables drawing of vector shapes on a terminal using the ncurses library. The interface is intended to be very simple to use, although it is not yet finished, and only supports drawing lines from a start point to end point, and some basic collision detection, but this was all that was required to create the lunarlander game.
+
+To use the library, simply call the initVect(sizex,sizey) function, use the createLine(startX,startY,endX,endY) function to create a lineVector, and add it to the engine with the addLine(lineVector* line) function. Call draw() to draw the scene, and manipulate the lineVector with moveLine(lineVector* line, float x, float y) which moves the lineVector by the amount specified from the current position of the lineVector. The line can also be manipulated with rotateLine(lineVector* line, float degrees). 
+
+Support for circles and rectangles is not yet supported.
